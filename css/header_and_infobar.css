@@ -1,0 +1,147 @@
+/*** Header et Navbar ***/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4.94 rem;
+    padding-top: 0.88rem;
+    padding-bottom: 1.88rem;
+}
+
+.header-logo{
+    height:1.19rem;
+}
+
+nav a{
+    margin-left: 4.25rem;
+    padding-top: 0.80rem;
+}
+
+nav a:hover{
+    color: var(--main-color);
+    border-top: 2px var(--main-color) solid;
+}
+/**********************/
+
+/* Barre de recherche */
+.info-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.88rem;
+    margin-bottom: 2.19rem;
+}
+
+.info-group h1{
+    font-size: 1.38rem;
+}
+
+.searchbar p{
+    font-size: 1rem;
+    margin-bottom: 35px;
+}
+
+.searchbar form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 23.52rem;
+    height: 3.15rem;
+    background-color: var(--main-bg-color);
+    border-radius: 0.94rem 0.94rem 0.94rem 0.94rem;
+    margin-bottom: 35px;
+}
+
+.logo-geolocalisation{
+    height: 1rem;
+    margin: auto;
+    padding-left: 0.78rem;
+    padding-right: 0.78rem;
+}
+
+.searchbar input{
+    border: none;
+    width: 20rem;
+    height: 2.9rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+
+.searchbar button{
+    width: 15.31rem;
+    height: 3.12rem;
+    font-size: 1.12rem;
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 0rem 0.94rem 0.94rem 0rem;
+    border:none;
+}
+
+/*********************************/
+
+/*******Filtres********/
+
+.filters-section{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.filters-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.filters-buttons button{ 
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 3.13rem;
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 15px;
+    background-color: white;
+    border: 2px var(--main-bg-color) solid;
+    border-radius: 1.56rem;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.filters-buttons button:hover{
+    background-color: var(--filter-bg-color);
+}
+
+.filters-buttons img{
+    vertical-align: center;
+    height: 1.38rem;
+    margin-right: 10px;
+}
+
+.info-items{
+    height: 24px;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.info-items img{
+    width: 15px;
+    height: 15px;
+    padding:10px;
+    border: 1px var(--main-bg-color) solid;
+    border-radius: 20px ;
+    margin-right: 10px;
+}
+
+.info-items p{
+    font-size: 1rem;
+}
+
+/**********************/

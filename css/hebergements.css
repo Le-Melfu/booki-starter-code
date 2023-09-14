@@ -1,0 +1,63 @@
+/****** Hebergements ***********/
+.hebergements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 65%;
+}
+
+.hebergements-cards{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 1%;
+}
+
+
+
+.hebergements-cards .card-tile{
+    display:block;
+    flex-direction: row;
+}
+
+.hebergements-cards .card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:inherit;
+}
+
+.hebergements-cards img{
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+}
+
+.hebergements-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin-top: 30px;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+.show-more{
+    display: block;
+    font-size: 1.13rem;
+    font-weight: 700;
+    margin: 0;
+}
+/*****************************/

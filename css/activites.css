@@ -1,0 +1,31 @@
+.activites{
+    display: flex;
+    flex-direction: column;
+}
+
+.activities-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;    
+}
+
+.activity-card{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 440px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    margin-bottom: 65px;
+}
+
+.activity-card img{
+    width:300px;
+    height: 380px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.activity-card h3{
+    margin: 19px;
+}

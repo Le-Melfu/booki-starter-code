@@ -1,6 +1,12 @@
+@import './header_and_infobar.css';
+@import './hebergements.css';
+@import './activites.css';
+@import './footer.css';
+
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 :root {
@@ -12,83 +18,7 @@
 .fa-solid {
     color: var(--main-color);
 }
-/*** Header et Navbar ***/
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 0.88rem;
-    padding-bottom: 1.88rem;
-}
 
-nav a{
-    margin-left: 4.25rem;
-}
-
-nav a:hover{
-    color: var(--main-color);
-    border-top: 2px var(--main-color) solid;
-    padding-top: 0.88rem;
-}
-/**********************/
-
-/* Barre de recherche et filtres */
-.info-group{
-    display: flex;
-    flex-direction: column;
-}
-
-.info-group h1{
-    font-size: 1.38rem;
-}
-
-.info-group p{
-    font-size: 1rem;
-    margin-top: 0.5rem;
-}
-
-.searchbar form{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 23.52rem;
-    height: 3.15rem;
-    background-color: var(--main-bg-color);
-    border-radius: 0.94rem 0.94rem 0.94rem 0.94rem;
-    margin-top: 2.19rem;
-}
-
-.logo-geolocalisation{
-    height: 1rem;
-    margin: auto;
-    padding-left: 0.78rem;
-    padding-right: 0.78rem;
-}
-
-.searchbar input{
-    border: none;
-    width: 20rem;
-    height: 2.9rem;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    overflow: hidden;
-}
-
-.searchbar button{
-    width: 15.31rem;
-    height: 3.12rem;
-    font-size: 1.12rem;
-    font-weight: bold;
-    background-color: var(--main-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 0rem 0.94rem 0.94rem 0rem;
-    border:none;
-}
-
-/*********************************/
 body {
     display: flex;
     justify-content: center;
@@ -109,6 +39,7 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
+    margin-bottom: 35px;
 }
 
 .card {
@@ -138,6 +69,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 35px;
 }
 
 .hebergements-and-populaires section {
@@ -147,23 +79,18 @@ a {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
-.hebergements {
-    width: 65%;
-}
-
 /****** Populaires ***********/
 .populaires {
     width: 32%;
 }
 
-.populaires-title {
+.populaires-title .hebergements-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.populaires-cards .card {
+.populaires-cards .card{
     display: flex;
     margin-top: 33px;
 }
