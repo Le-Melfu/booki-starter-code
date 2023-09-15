@@ -3,18 +3,18 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 4.94 rem;
-    padding-top: 0.88rem;
-    padding-bottom: 1.88rem;
+    height: 79px;
+    padding-top: 14px;
 }
 
 .header-logo{
-    height:1.19rem;
+    width: 61px;
+    padding: 30px;
 }
 
 nav a{
     margin-left: 4.25rem;
-    padding-top: 0.80rem;
+    padding-top: 12px;
 }
 
 nav a:hover{
@@ -37,6 +37,7 @@ nav a:hover{
 
 .searchbar p{
     font-size: 1rem;
+    margin-top: 8px;
     margin-bottom: 35px;
 }
 
@@ -45,50 +46,65 @@ nav a:hover{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 23.52rem;
-    height: 3.15rem;
+    width: 377px;
+    height: 49px;
     background-color: var(--main-bg-color);
-    border-radius: 0.94rem 0.94rem 0.94rem 0.94rem;
+    border-radius: 15px;
     margin-bottom: 35px;
 }
 
 .logo-geolocalisation{
-    height: 1rem;
-    margin: auto;
-    padding-left: 0.78rem;
-    padding-right: 0.78rem;
+    height: inherit;
+    width:14px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .searchbar input{
     border: none;
-    width: 20rem;
-    height: 2.9rem;
+    width: 320px;
+    height: 47px;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
     overflow: hidden;
+    background-color: white;
 }
 
-.searchbar button{
-    width: 15.31rem;
-    height: 3.12rem;
+.searchbar .desktop-search-button{
+    width: 245px;
+    height: 50px;
     font-size: 1.12rem;
     font-weight: bold;
     background-color: var(--main-color);
     color: white;
     text-decoration: none;
-    border-radius: 0rem 0.94rem 0.94rem 0rem;
+    border-radius: 0px 15px 15px 0px;
     border:none;
 }
+
+.searchbar .desktop-search-button:active{
+    background-color: blue;
+}
+
+.searchbar .mobile-search-button{
+    display: none;
+    border:none;
+    background-color: white;
+    border-radius: 15px;
+}
+
+
 
 /*********************************/
 
 /*******Filtres********/
 
 .filters-section{
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 0.5rem;
+    justify-content: flex-start;
+    margin-bottom: 8px;
 }
 
 .filters-bar{
@@ -98,8 +114,15 @@ nav a:hover{
     align-items: center;
 }
 
+.filters-buttons{
+    display: flex;
+    flex-direction: row;
+}
+
 .filters-buttons button{ 
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
     align-items: center;
     width: auto;
     height: 3.13rem;
@@ -118,9 +141,8 @@ nav a:hover{
 }
 
 .filters-buttons img{
-    vertical-align: center;
-    height: 1.38rem;
-    margin-right: 10px;
+    height: 22px;
+    margin-right: 9px;
 }
 
 .info-items{
@@ -145,3 +167,91 @@ nav a:hover{
 }
 
 /**********************/
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .filters-bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .filters-bar h3{
+        align-self: start;
+    }
+
+    .filters-buttons button{
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 115px;
+        padding-top: 14px;
+    }
+    
+    nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:center;
+    }
+
+    nav a{        
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 21px;
+        margin: 0;
+        border-bottom: 2px var(--main-bg-color) solid;
+    }
+    
+    nav a:hover{
+        color: var(--main-color);
+        border-top: none;
+        border-bottom: 2px var(--main-color) solid;
+    }
+
+
+    .searchbar .desktop-search-button{
+        display: none;
+    }
+    
+    .searchbar form{
+        width: 100%;
+    }
+
+    .searchbar input{
+        width: 100%;
+    }
+
+    .searchbar .mobile-search-button{
+        display:flex;
+    }
+
+    .filters-buttons{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+    }
+
+    .filters-buttons button{
+        font-size: 0.88rem;
+    }
+
+    .filters-buttons img{
+        height: 22px;
+        margin-right: 5px;
+    }
+}

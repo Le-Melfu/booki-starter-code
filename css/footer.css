@@ -3,14 +3,26 @@ footer {
     flex-direction: row;
     justify-content:space-evenly;
     background-color: var(--main-bg-color);
+    margin: 0;
 }
 
 footer div{
     padding: 20px;
     width: 33%;
     text-decoration: none;
-
 }
+
 footer p{
     margin-top: 15px;
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
 }
