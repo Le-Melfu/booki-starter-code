@@ -1,8 +1,8 @@
 .activities{
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
-    margin-bottom: 65px; 
+    padding: 30px;
+    margin-bottom: 35px; 
 }
 
 .activities-cards{
@@ -22,7 +22,6 @@
     height: inherit;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
-    margin-bottom: 65px;
 }
 
 .activity-card img{
@@ -51,10 +50,6 @@
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
-    .activities{
-        margin-left: 0;
-        margin-bottom: 65px; 
-    }
     .activities-cards{
         flex-direction: column;
     }
