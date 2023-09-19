@@ -161,6 +161,7 @@ nav a:hover{
     margin-right: 10px;
 }
 
+
 /**********************/
 
 /****** Media queries ***********/
@@ -169,15 +170,20 @@ nav a:hover{
     .filters-bar{
         display: flex;
         flex-direction: column;
-        justify-content: left;
     }
 
     .filters-bar h3{
         align-self: start;
     }
 
+    .filters-buttons{
+        justify-content: space-between;
+        width:100%;
+    }
+
     .filters-buttons button{
         margin-top: 20px;
+        margin-left: 0;
         font-size: 1rem;
     }
 }

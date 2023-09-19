@@ -55,10 +55,11 @@
     
     .activities-cards a{
         width:100%;
+        height: inherit;
         margin-bottom: 15px;
     }
 
-    .activity-card{
+    .activity-card{        
         justify-content: center;
     }
 
