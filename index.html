@@ -24,18 +24,20 @@
             </nav>
         </header>
         <main>
-            <!-- Section contenant la barre de recherche et les filtres -->
+<!-- Section contenant la barre de recherche et les filtres -->
             <section class="info-group">
+    <!-- Barre de recherche-->
                 <div class="searchbar">
                     <h1>Trouver votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
-                    <form method="post" action="">
+                    <form method="post" action="POST">
                         <img class="form-logo" src="./images/icons/localisation.svg" alt="logo de localisation">
-                        <input type="text" name="barre de recherche" placeholder="Choisir sa ville">
+                        <input type="text" name="barre de recherche" placeholder="Marseille, France">
                         <button type="button" name="search-button" class="desktop-search-button">Rechercher</button>
                         <button type="button" name="search-button" class="mobile-search-button"><img class="mobile-search-button" src="./images/icons/mobile_search_button.svg" alt="Bouton de recherche"></button>
                     </form>
                 </div>
+    <!--Barre de filtres-->
                 <div class="filters-section">
                     <div class="filters-bar">
                         <h3>Filtres</h3>
@@ -52,9 +54,9 @@
                     </div>                    
                 </div>
             </section>
-            <!-- fin de la Section contenant la barre de recherche et les filtres -->
+<!-- fin de la Section contenant la barre de recherche et les filtres -->
             <div class="hebergements-and-populaires">
-                <!-- Section contenant la liste des hébergements -->
+    <!-- Section contenant la liste des hébergements -->
                 <section class="hebergements" id="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
@@ -79,7 +81,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a class="card-tile" href="#">
+                        <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
@@ -179,8 +181,9 @@
                         <p><span class="show-more">Afficher plus</span></p>
                     </div>
                 </section>
-                <!-- fin de la Section contenant la liste des hébergements -->
+    <!-- fin de la Section contenant la liste des hébergements -->
 
+    <!-- Section contenant la liste des hébergements populaires -->
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
@@ -247,7 +250,10 @@
                     </div>
                 </section>
             </div>
-                <!-- Section contenant la liste des activitées disponibles -->
+    <!-- Fin de la section contenant la liste des hébergements populaires -->
+
+
+<!-- Section contenant la liste des activitées disponibles -->
                 <section class="activities" id="activites">
                     <h2 class="section-title">Activités à Marseille</h2>
                     <div class="activities-cards">
@@ -275,16 +281,17 @@
                                 <h3 class="card-title">Notre Dame de la Garde</h3>
                             </article>
                         </a>
+                    </div>
                 </section>
-                <!-- Fin de la Section contenant la liste des activitées disponibles -->
+<!-- Fin de la Section contenant la liste des activitées disponibles -->
         </main>
         
     </div>
     <footer>
         <div>
             <h3>À propos</h3>
-            <p>Fonctionnement du site</p></li>
-            <p>Conditions générales</p></li>
+            <p>Fonctionnement du site</p>
+            <p>Conditions générales</p>
             <p>Données et confidentialité</p>                
         </div>
         <div>
