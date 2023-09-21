@@ -453,14 +453,14 @@ footer p{
     }
 
     /*Hebergements*/
-    .hebergements-cards{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
     .hebergements {
         width: 100%;
         padding: 30px;
+    }
+
+    .hebergements-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     /*Populaires*/
@@ -530,9 +530,8 @@ footer p{
         justify-content: center;
         align-items: center;
         height: 115px;
-        padding-top: 14px;
+        padding: 14px 0 0 0;
         margin-bottom: 35px;
-        padding: 0;
         background-color: white; 
     }
 
@@ -606,13 +605,14 @@ footer p{
     .filters-buttons{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
+        gap: 20px 10px;
+        max-width: 400px;
+        align-self: flex-start;
     }
 
     .filters-buttons button{
         font-size: 14px;
+        max-width: 162px;
     }
 
     .filters-buttons img{
