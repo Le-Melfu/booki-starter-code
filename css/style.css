@@ -602,17 +602,22 @@ footer p{
         padding: 0px;
     }
 
+    .filters-bar .card-title {
+        margin-bottom: 20px;
+    }
+
     .filters-buttons{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px 10px;
-        max-width: 400px;
+        max-width: 375px;
         align-self: flex-start;
     }
 
     .filters-buttons button{
         font-size: 14px;
         max-width: 162px;
+        margin: 0;
     }
 
     .filters-buttons img{
