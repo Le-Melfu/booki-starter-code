@@ -14,27 +14,32 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <div class="main-container">
+<body>    
+    <div class="main-container"> 
         <header>
-            <img class="header-logo" src="./images/logo/Booki.svg" alt="Logo de Booki">
+            <img class="header-logo" src="./images/logo/Booki.svg" alt="logo Booki">
             <nav>                
                 <a href="#hebergements">Hébergements</a>
                 <a href="#activites">Activités</a>
             </nav>
-        </header>
+        </header>       
         <main>
 <!-- Section contenant la barre de recherche et les filtres -->
             <section class="info-group">
-    <!-- Barre de recherche-->
-                <div class="searchbar">
-                    <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+<!-- Headline -->
+                <div class="headline">
+                    <h1 class="main-title">Trouver votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
+                </div>
+    <!-- Barre de recherche-->
+                <div class="searchbar">                    
                     <form method="post" action="POST">
-                        <img class="form-logo" src="./images/icons/localisation.svg" alt="logo de localisation">
-                        <input type="text" name="barre de recherche" placeholder="Marseille, France">
-                        <button type="button" name="search-button" class="desktop-search-button">Rechercher</button>
-                        <button type="button" name="search-button" class="mobile-search-button"><img class="mobile-search-button" src="./images/icons/mobile_search_button.svg" alt="Bouton de recherche"></button>
+                        <i class="location-logo fa-solid fa-location-dot"></i>
+                        <input type="text" name="searchbar" placeholder="Marseille, France">
+                        <button type="button" name="search-button" class="search-button">
+                            <span class="desktop-search-button">Rechercher</span>
+                            <i class="mobile-search-button fa-solid fa-magnifying-glass"></i>
+                        </button>
                     </form>
                 </div>
     <!--Barre de filtres-->
@@ -42,14 +47,16 @@
                     <div class="filters-bar">
                         <h3>Filtres</h3>
                         <div class="filters-buttons ">
-                            <button type="button"><img src="./images/icons/economique.svg" alt="Icône économique">Économique</button>
-                            <button type="button"><img src="./images/icons/family.svg" alt="Icône Familial">Familial</button>
-                            <button type="button"><img src="./images/icons/romantic.svg" alt="Icône Romantique">Romantique</button>
-                            <button type="button"><img src="./images/icons/fire.svg" alt="Icône de flamme">Nos pépites</button>
+                            <button type="button"><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                            <button type="button"><i class="fa-solid fa-person"></i>Familial</button>
+                            <button type="button"><i class="fa-solid fa-heart"></i>Romantique</button>
+                            <button type="button"><i class="fa-solid fa-fire"></i>Nos pépites</button>
                         </div>
                     </div>
                     <div class="info-items">
-                        <img src="./images/icons/info.svg" alt="Icône d'information">
+                        <div class="info-logo">
+                        <i class="fa-solid fa-info"></i>
+                        </div>                       
                         <p>Plus de 500 logements sont disponibles dans cette ville</p>
                     </div>                    
                 </div>
@@ -258,25 +265,25 @@
                     <h2 class="section-title">Activités à Marseille</h2>
                     <div class="activities-cards">
                         <a href="#">
-                            <article class="activity-card">
+                            <article class="activity-card card">
                                 <img src="./images/activites/reno-laithienne.jpg" alt="Photo du Vieux-Port de Marseille">
                                 <h3 class="card-title">Vieux-Port</h3>
                             </article>
                         </a>
                         <a href="#">
-                            <article class="activity-card">
+                            <article class="activity-card card">
                                 <img src="./images/activites/paul-hermann.jpg" alt="Photo d'un ancien fort au milieu des rochers">
                                 <h3 class="card-title">Fort de Pomègues</h3>
                             </article>
                         </a>
                         <a href="#">
-                            <article class="activity-card">                                
+                            <article class="activity-card card">                                
                                 <img src="./images/activites/kilyan-sockalingum.jpg" alt="Photo du Parc National des Calanques avec vue sur la mer">
                                 <h3 class="card-title">Parc National des Calanques</h3>
                             </article>
                         </a>
                         <a href="#">
-                            <article class="activity-card">
+                            <article class="activity-card card">
                                 <img src="./images/activites/florian-wehde.jpg" alt="Photo de la Basilique Notre Dame de la Garde">
                                 <h3 class="card-title">Notre Dame de la Garde</h3>
                             </article>
@@ -285,26 +292,26 @@
                 </section>
 <!-- Fin de la Section contenant la liste des activitées disponibles -->
         </main>
-        
+        <footer>
+            <div>
+                <h3>À propos</h3>
+                <p>Fonctionnement du site</p>
+                <p>Conditions générales</p>
+                <p>Données et confidentialité</p>                
+            </div>
+            <div>
+                <h3>Nos hébergements</h3>                
+                <p>Charte qualité</p>
+                <p>Proposer votre hôtel</p>                
+            </div>
+            <div>
+                <h3>Assistance</h3>                
+                <p>Centre d'aide</p>
+                <p>Nous contacter</p>                
+            </div>
+        </footer>
     </div>
-    <footer>
-        <div>
-            <h3>À propos</h3>
-            <p>Fonctionnement du site</p>
-            <p>Conditions générales</p>
-            <p>Données et confidentialité</p>                
-        </div>
-        <div>
-            <h3>Nos hébergements</h3>                
-            <p>Charte qualité</p>
-            <p>Proposer votre hôtel</p>                
-        </div>
-        <div>
-            <h3>Assistance</h3>                
-            <p>Centre d'aide</p>
-            <p>Nous contacter</p>                
-        </div>
-    </footer>
+    
 </body>
 
 </html>
