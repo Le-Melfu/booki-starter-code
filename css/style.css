@@ -458,11 +458,6 @@ footer p{
         padding: 30px;
     }
 
-    .hebergements-cards{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
     /*Populaires*/
     .populaires {
         width: 100%;
@@ -628,7 +623,7 @@ footer p{
     /*Hebergements*/
 
     .hebergements {
-        scroll-margin-top: 115px;
+        scroll-margin-top: 125px;
     }
 
     .hebergements-and-populaires section{
